@@ -33,7 +33,7 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo =
+
 # Variables
 b='\033[1m'
 u='\033[4m'
