@@ -9,10 +9,15 @@ Subscribe Chanel YouTube
 # DarkFB Termux
 
 pkg install git python2
+
 pip2 install --upgrade
+
 git clone https://github.com/baaztian/CyberElang
+
 cd DarkPremium
+
 pip2 install -r requirements.txt
+
 python2 DarkFB.py
 
 
