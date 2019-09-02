@@ -1,3 +1,30 @@
+#!/bin/bash
+#version 1.0
+
+# Variables
+b='\033[1m'
+u='\033[4m'
+bl='\E[30m'
+r='\E[31m'
+g='\E[32m'
+bu='\E[34m'
+m='\E[35m'
+c='\E[36m'
+w='\E[37m'
+endc='\E[0m'
+enda='\033[0m'
+blue='\e[1;34m'
+cyan='\e[1;36m'
+red='\e[1;31m'
+
+figlet Tools | lolcat
+
+echo -e  "_____________________________________________________________"
+echo -e  "Tools    : 0daysecurity98 $white         " |lolcat
+echo -e  "Creadby  : 0day $white   " |lolcat
+echo -e  "Contact  : attackofcyber969@gmail.com $white " |lolcat
+echo -e  "_____________________________________________________________"
+
 # -*- coding: utf-8 -*-
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
@@ -33,7 +60,6 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo = " \x1b[1;92m█████████\n \x1b[1;92m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;92m█ \x1b[1;93m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;92m█ \x1b[1;93m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mPremium\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m Baztian   \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[92mhttps://github.com/Baaztian\CyberElang\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mFB       \x1b[1;91m:   \x1b[1;92\x1b[92mhttps://wa.me\0895360130761\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Silahkan Login Operamini Agar Tidak Checkpoint\n'
 
 def tik():
     titik = [
@@ -161,13 +187,13 @@ def menu():
     print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m FBID \x1b[1;91m: \x1b[1;92m' + id + (39 - len(id)) * '\x1b[1;97m ' + '║'
     print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Subs \x1b[1;91m: \x1b[1;92m' + sub + (39 - len(sub)) * '\x1b[1;97m ' + '║'
     print '\x1b[1;97m╠' + 50 * '\xe2\x95\x90' + '╝'
-    print '║-> \x1b[1;37;40m1. User Information'
-    print '║-> \x1b[1;37;40m2. Hack Facebook Account'
-    print '║-> \x1b[1;37;40m3. Bot'
-    print '║-> \x1b[1;37;40m4. Others'
+    print '║-> \x1b[1;37;40m1. Info Facebook'
+    print '║-> \x1b[1;37;40m2. Hack Facebook v1.9'
+    print '║-> \x1b[1;37;40m3. Bot like+comen+update'
+    print '║-> \x1b[1;37;40m4. Lain nya gruf fb'
     print '║-> \x1b[1;37;40m5. Update'
-    print '║-> \x1b[1;37;40m6. Logout'
-    print '║-> \x1b[1;31;40m0. Exit'
+    print '║-> \x1b[1;37;40m6. Ganti akun'
+    print '║-> \x1b[1;31;40m0. Keluar menu'
     print '\x1b[1;37;40m║'
     pilih()
 
@@ -200,7 +226,7 @@ def pilih():
                         else:
                             if zedd == '6':
                                 os.system('rm -rf login.txt')
-				os.system('xdg-open https://m.facebook.com/rizz.magizz')
+				os.system('xdg-open https://m.facebook.com/muhamad.abdulqodier')
                                 keluar()
                             else:
                                 if zedd == '0':
@@ -294,10 +320,10 @@ def menu_hack():
     os.system('clear')
     print logo
     print 52 * '\x1b[1;97m\xe2\x95\x90'
-    print '║-> \x1b[1;37;40m1. Mini Hack Facebook (\x1b[1;92mTarget\x1b[1;97m)'
-    print '║-> \x1b[1;37;40m2. Multi Bruteforce Facebook'
+    print '║-> \x1b[1;37;40m1. Hack Target akun (\x1b[1;92mTarget\x1b[1;97m)'
+    print '║-> \x1b[1;37;40m2. Hack massal Bruteforce Facebook'
     print '║-> \x1b[1;37;40m3. Super Multi Bruteforce Facebook'
-    print '║-> \x1b[1;37;40m4. BruteForce (\x1b[1;92mTarget\x1b[1;97m)'
+    print '║-> \x1b[1;37;40m4. BruteForce Target (\x1b[1;92mTarget\x1b[1;97m)'
     print '║-> \x1b[1;37;40m5. Yahoo Clone'
     print '║-> \x1b[1;37;40m6. Ambil ID/Email/HP'
     print '║-> \x1b[1;31;40m0. Back'
@@ -579,9 +605,9 @@ def super():
     os.system('clear')
     print logo
     print 52 * '\x1b[1;97m\xe2\x95\x90'
-    print '║-> \x1b[1;37;40m1. Crack from Friends'
+    print '║-> \x1b[1;37;40m1. Crack from Teman'
     print '║-> \x1b[1;37;40m2. Crack from Group'
-    print '║-> \x1b[1;37;40m3. Crack from File'
+    print '║-> \x1b[1;37;40m3. Crack from File txt'
     print '║-> \x1b[1;31;40m0. Kembali'
     print '\x1b[1;37;40m║'
     pilih_super()
@@ -983,8 +1009,8 @@ def grab():
     os.system('clear')
     print logo
     print 52 * '\x1b[1;97m\xe2\x95\x90'
-    print '║-> \x1b[1;37;40m1. Get ID From Friends'
-    print '║-> \x1b[1;37;40m2. Get Friends ID From Friends'
+    print '║-> \x1b[1;37;40m1. Get ID From Teman'
+    print '║-> \x1b[1;37;40m2. Get Friends ID From Teman'
     print '║-> \x1b[1;37;40m3. Get ID From GRUP'
     print '║-> \x1b[1;37;40m4. Get Friends Email'
     print '║-> \x1b[1;37;40m5. Get Friends Email From Friends'
